@@ -1,0 +1,112 @@
+{
+  "site_url": "https://qiming-zhu.github.io/",
+  "publications": [
+    {
+      "id": "os-native",
+      "title": "OS-native Agents: Managing User Tasks in the Dynamic Mobile World",
+      "short_title": "OS-native Agents",
+      "authors": [
+        "Qiming Zhu",
+        "Shunian Chen",
+        "Wentao Ge",
+        "Zhengyang Tang",
+        "Xiaoguang Li",
+        "Pinjia He",
+        "Benyou Wang"
+      ],
+      "year": 2026,
+      "venue": "OS-native Agents · 2026",
+      "role": {
+        "zh": "第一作者",
+        "en": "First author"
+      },
+      "homepage": "https://qiming-zhu.github.io/OSNativeAgent-trajectories/",
+      "code": "https://github.com/FreedomIntelligence/OSNativeAgent",
+      "code_visibility": "private",
+      "demo": "https://qiming-zhu.github.io/OSNativeAgent-trajectories/demo/",
+      "summary": {
+        "zh": "将 Agent 接入操作系统原生的状态、能力与信任机制，在动态移动环境中持续协调跨应用任务；并构建可重放的 Android 基准 DynamicWorld。",
+        "en": "Integrating agents with native OS state, capability, and trust mechanisms to coordinate ongoing tasks in a changing mobile world, with the replayable Android benchmark DynamicWorld."
+      },
+      "image": "images/research/os-native-framework.png",
+      "image_alt": {
+        "zh": "OS-native Agent 框架：持久化任务会话、原生状态监听、跨应用能力与授权机制。",
+        "en": "OS-native Agent framework with persistent task sessions, native state monitors, cross-application capabilities, and authorization."
+      },
+      "image_width": 1698,
+      "image_height": 780
+    },
+    {
+      "id": "tiermem",
+      "title": "TierMem: Balancing Compressed Memory and Raw Evidence for Long-Horizon Agent Memory",
+      "short_title": "TierMem",
+      "authors": [
+        "Qiming Zhu",
+        "Shunian Chen",
+        "Rui Yu",
+        "Zhehao Wu",
+        "Benyou Wang"
+      ],
+      "year": 2026,
+      "venue": "COLM 2026",
+      "role": {
+        "en": "First author",
+        "zh": "第一作者"
+      },
+      "homepage": null,
+      "paper": "https://openreview.net/forum?id=svKCa4itcd",
+      "code": "https://github.com/FreedomIntelligence/Tiermem",
+      "summary": {
+        "en": "A two-tier agent memory framework that uses compact summaries by default and recovers raw evidence when more detail is needed. Provenance links and verified write-back help balance answer quality, context cost, and latency over long interactions.",
+        "zh": "让 Agent 默认使用精简摘要，在证据不足时按需回溯原始日志。通过来源关联与验证后的记忆回写，在长期交互中兼顾回答质量、上下文开销和延迟。"
+      },
+      "image": "images/research/tiermem-overview.jpg",
+      "image_alt": {
+        "en": "TierMem architecture linking summary memory to raw evidence with a router and consolidation loop.",
+        "zh": "TierMem 架构：通过路由器与证据回写连接摘要记忆和原始日志。"
+      },
+      "image_width": 1440,
+      "image_height": 449
+    },
+    {
+      "id": "mtalk",
+      "title": "MTalk-Bench: Evaluating Speech-to-Speech Models in Multi-Turn Dialogues via Arena-style and Rubrics Protocols",
+      "short_title": "MTalk-Bench",
+      "authors": [
+        "Yuhao Du",
+        "Qianwei Huang",
+        "Guo Zhu",
+        "Zhanchen Dai",
+        "Shunian Chen",
+        "Qiming Zhu",
+        "Le Pan",
+        "Minghao Chen",
+        "Yuhao Zhang",
+        "Li Zhou",
+        "Benyou Wang",
+        "Haizhou Li"
+      ],
+      "year": 2025,
+      "venue": "arXiv 2025",
+      "role": {
+        "en": "Coauthor",
+        "zh": "共同作者"
+      },
+      "homepage": "https://freedomintelligence.github.io/MTalk-Bench/",
+      "paper": "https://arxiv.org/abs/2508.18240",
+      "code": "https://github.com/FreedomIntelligence/MTalk-Bench",
+      "dataset": "https://huggingface.co/datasets/FreedomIntelligence/MTalk-Bench",
+      "summary": {
+        "en": "A multi-turn speech-to-speech benchmark covering semantic content, paralinguistic cues, and ambient sounds. It combines Arena-style comparisons with hierarchical rubrics to diagnose model capabilities and assess the reliability of human and LLM judges.",
+        "zh": "面向多轮语音对话的评测基准，覆盖语义信息、副语言线索与环境声音。结合 Arena 成对比较与分层 Rubrics，分析模型能力以及人工与 LLM 裁判的评测可靠性。"
+      },
+      "image": "images/research/mtalk-overview.png",
+      "image_alt": {
+        "en": "MTalk-Bench overview connecting speech-aware data construction with Arena-style and rubric-based evaluation.",
+        "zh": "MTalk-Bench 总览：从多维语音对话构造到 Arena 成对比较与 Rubrics 细粒度评测。"
+      },
+      "image_width": 1600,
+      "image_height": 448
+    }
+  ]
+}
