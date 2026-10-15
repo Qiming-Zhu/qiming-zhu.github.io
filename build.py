@@ -12,34 +12,38 @@ TEXT = {
  'zh': {
   'name': '朱淇铭', 'other_name': 'Qiming Zhu', 'title': '朱淇铭 · Qiming Zhu',
   'nav': ['关于', '研究', '教育'], 'skip': '跳到主要内容',
-  'intro': '我是<a href="https://www.cuhk.edu.cn/" target="_blank" rel="noopener noreferrer">香港中文大学（深圳）</a>人工智能学院的人工智能研究型硕士生，导师为<a href="https://wabyking.github.io/" target="_blank" rel="noopener noreferrer">王本友</a>教授。此前于西安交通大学获得数学与应用数学学士学位。',
-  'focus': '我关注 AI Agent 如何在长期交互中保留与利用经验、跟踪变化中的用户目标，并可靠地执行任务。研究围绕<strong>操作系统原生 Agent、长期记忆与多轮交互评测</strong>展开。',
+  'intro': '我是<a href="https://www.cuhk.edu.cn/" target="_blank" rel="noopener noreferrer">香港中文大学（深圳）</a>人工智能学院的人工智能研究型硕士生，导师为<a href="https://wabyking.github.io/" target="_blank" rel="noopener noreferrer">王本友</a>教授。',
+  'focus': '我致力于推进<strong>个性化智能体（Personalized Agents）</strong>，让 working agents 和 mobile agents 在工作与日常生活中，成为理解个人、持续协作的伙伴。',
+  'motivation': '<p><strong>更懂你。</strong>我研究长期记忆（memory），并探索 RSI，希望 Agent 能从交互历史与反馈中积累经验，更好地理解个人偏好和需求，持续改进协作方式。</p><p><strong>更能处理和管理任务。</strong>通过 OS-native 支持，我探索如何让 Agent 在需求与环境变化时，持续跟踪目标、协调跨时间与跨应用的任务；多轮交互评测则帮助我检验这些能力是否真正服务于用户。</p>',
+  'vision': '期待和你一起探索、一起构建，逐步走向我们想象中的 <strong>JARVIS</strong>。',
   'research': '研究工作', 'research_en': 'Selected research',
-  'research_note': '从记住经验，到应对变化，再到理解交互。',
+  'research_note': '以记忆、任务管理与交互评测，探索个性化智能体。',
   'education': '教育背景', 'education_en': 'Education',
   'edu': [('2025.09 — 至今', '香港中文大学（深圳）', '人工智能研究型硕士 · 人工智能学院', '导师：王本友教授'), ('2020.09 — 2024.07', '西安交通大学', '数学与应用数学 · 理学学士', '')],
   'project': '项目主页', 'paper': '论文', 'code': '代码', 'demo': '在线演示', 'dataset': '数据集',
   'private': '代码暂未公开', 'figure': '查看完整研究配图', 'close': '关闭图片',
   'image_hint': '点击图片放大', 'portrait': '朱淇铭在海边看日落',
-  'contact': '欢迎交流 Agent、记忆与评测相关研究。',
+  'contact': '欢迎交流个性化智能体相关研究与实践。',
   'footer': '基于', 'template': '学术主页模板', 'updated': '更新于 2026 年 10 月',
-  'description': '朱淇铭，香港中文大学（深圳）人工智能研究型硕士生。研究操作系统原生 Agent、长期记忆与多轮交互评测。',
+  'description': '朱淇铭，香港中文大学（深圳）人工智能研究型硕士生。致力于推进个性化智能体，探索 memory、RSI、OS-native 与多轮交互评测。',
  },
  'en': {
   'name': 'Qiming Zhu', 'other_name': '朱淇铭', 'title': 'Qiming Zhu · 朱淇铭',
   'nav': ['About', 'Research', 'Education'], 'skip': 'Skip to main content',
-  'intro': 'I am a research master’s student in Artificial Intelligence at <a href="https://www.cuhk.edu.cn/en" target="_blank" rel="noopener noreferrer">The Chinese University of Hong Kong, Shenzhen</a>, advised by <a href="https://wabyking.github.io/" target="_blank" rel="noopener noreferrer">Prof. Benyou Wang</a>. Previously, I received my B.Sc. in Mathematics and Applied Mathematics from Xi’an Jiaotong University.',
-  'focus': 'I study how AI agents retain and use experience, track changing user goals, and carry out tasks reliably over long interactions. My research centers on <strong>OS-native agents, long-horizon memory, and multi-turn interaction evaluation</strong>.',
+  'intro': 'I am a research master’s student in Artificial Intelligence at <a href="https://www.cuhk.edu.cn/en" target="_blank" rel="noopener noreferrer">The Chinese University of Hong Kong, Shenzhen</a>, advised by <a href="https://wabyking.github.io/" target="_blank" rel="noopener noreferrer">Prof. Benyou Wang</a>.',
+  'focus': 'I aim to advance <strong>Personalized Agents</strong>: working agents and mobile agents that understand individuals and collaborate with them over time, across work and everyday life.',
+  'motivation': '<p><strong>Understanding you better.</strong> I study long-term memory and explore RSI, with the goal of helping agents learn from interaction history and feedback, understand personal preferences and needs, and improve how they collaborate.</p><p><strong>Handling and managing tasks better.</strong> Through OS-native support, I explore agents that track goals and coordinate tasks over time and across applications as user needs and environments evolve. Multi-turn interaction evaluation helps me examine whether these capabilities truly serve the user.</p>',
+  'vision': 'Let’s explore and build together, taking steps toward the <strong>JARVIS</strong> we envision.',
   'research': 'Selected research', 'research_en': 'Research',
-  'research_note': 'Remembering experience. Adapting to change. Understanding interaction.',
+  'research_note': 'Exploring personalized agents through memory, task management, and interaction evaluation.',
   'education': 'Education', 'education_en': 'Background',
   'edu': [('Sep 2025 — Present', 'The Chinese University of Hong Kong, Shenzhen', 'Research master’s in Artificial Intelligence · School of AI', 'Advisor: Prof. Benyou Wang'), ('Sep 2020 — Jul 2024', 'Xi’an Jiaotong University', 'B.Sc. in Mathematics and Applied Mathematics', '')],
   'project': 'Project', 'paper': 'Paper', 'code': 'Code', 'demo': 'Live demo', 'dataset': 'Dataset',
   'private': 'Code not yet public', 'figure': 'View full research figure', 'close': 'Close image',
   'image_hint': 'Click to enlarge', 'portrait': 'Qiming Zhu watching the sunset by the sea',
-  'contact': 'Happy to connect about agents, memory, and evaluation.',
+  'contact': 'Happy to connect about personalized agents, in research and practice.',
   'footer': 'Adapted from', 'template': 'academic homepage template', 'updated': 'Updated October 2026',
-  'description': 'Qiming Zhu is an AI research master’s student at CUHK-Shenzhen, working on OS-native agents, long-horizon memory, and multi-turn interaction evaluation.',
+  'description': 'Qiming Zhu is an AI research master’s student at CUHK-Shenzhen, advancing personalized agents through memory, RSI, OS-native support, and multi-turn interaction evaluation.',
  }
 }
 
@@ -105,7 +109,6 @@ for lang, t in TEXT.items():
   <meta property="og:image" content="{e(URL+'images/me.jpg')}">
   <meta property="og:locale" content="{'zh_CN' if lang == 'zh' else 'en_US'}">
   <meta name="twitter:card" content="summary">
-  <link rel="icon" href="{prefix}images/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="{prefix}stylesheet.css">
   <script type="application/ld+json">{jsonld}</script>
   <script>
@@ -122,7 +125,6 @@ for lang, t in TEXT.items():
 <body>
   <a class="skip-link" href="#main">{t['skip']}</a>
   <header class="site-header"><div class="header-inner">
-    <a class="wordmark" href="#about" aria-label="{t['name']}">QZ<span>.</span></a>
     <nav aria-label="{'主导航' if lang == 'zh' else 'Main navigation'}">{nav}</nav>
     <div class="language-switch" aria-label="{'语言选择' if lang == 'zh' else 'Language'}">
       <a href="{'' if lang == 'zh' else '../'}?lang=zh" lang="zh-CN" data-language-link="zh" {'aria-current="page"' if lang == 'zh' else ''}>中文</a>
@@ -133,9 +135,11 @@ for lang, t in TEXT.items():
   <main id="main" class="page">
     <section id="about" class="about-section" aria-labelledby="name">
       <div class="bio">
-        <p class="eyebrow">AGENTS · MEMORY · EVALUATION</p>
+        <p class="eyebrow">PERSONALIZED AGENTS</p>
         <h1 id="name">{t['name']}<span class="other-name">{t['other_name']}</span></h1>
         <p>{t['intro']}</p><p>{t['focus']}</p>
+        <div class="motivation">{t['motivation']}</div>
+        <p class="vision">{t['vision']}</p>
         <div class="contact-links">
           <a href="mailto:225085006@link.cuhk.edu.cn">Email <span aria-hidden="true">↗</span></a>
           {external('https://scholar.google.com/citations?user=vwQ1_0AAAAAJ', 'Google Scholar <span aria-hidden="true">↗</span>')}

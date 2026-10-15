@@ -2,7 +2,14 @@
 
 [个人网站](https://qiming-zhu.github.io/) · [English](https://qiming-zhu.github.io/en/) · [Google Scholar](https://scholar.google.com/citations?user=vwQ1_0AAAAAJ) · [Email](mailto:225085006@link.cuhk.edu.cn)
 
-我是香港中文大学（深圳）的人工智能研究型硕士生，导师为王本友教授。关注 AI Agent 如何在长期交互中保留与利用经验、跟踪变化中的用户目标，并可靠地执行任务。研究围绕 **OS-native mobile agents**、**agent memory** 与 **multi-turn speech evaluation** 展开。
+我是香港中文大学（深圳）的人工智能研究型硕士生，导师为王本友教授。
+
+我致力于推进 **个性化智能体（Personalized Agents）**，让 working agents 和 mobile agents 在工作与日常生活中，成为理解个人、持续协作的伙伴。
+
+- **更懂你。** 我研究长期记忆（memory），并探索 RSI，希望 Agent 能从交互历史与反馈中积累经验，更好地理解个人偏好和需求，持续改进协作方式。
+- **更能处理和管理任务。** 通过 OS-native 支持，我探索如何让 Agent 在需求与环境变化时，持续跟踪目标、协调跨时间与跨应用的任务；多轮交互评测则帮助我检验这些能力是否真正服务于用户。
+
+期待和你一起探索、一起构建，逐步走向我们想象中的 **JARVIS**。
 
 ## Selected Research
 
