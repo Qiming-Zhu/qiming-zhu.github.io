@@ -13,9 +13,9 @@ TEXT = {
   'name': '朱淇铭', 'other_name': 'Qiming Zhu', 'title': '朱淇铭 · Qiming Zhu',
   'nav': ['关于', '研究', '教育'], 'skip': '跳到主要内容',
   'intro': '我是<a href="https://www.cuhk.edu.cn/" target="_blank" rel="noopener noreferrer">香港中文大学（深圳）</a>人工智能学院的研究型硕士生，导师为<a href="https://wabyking.github.io/" target="_blank" rel="noopener noreferrer">王本友</a>教授。',
-  'focus': '我的研究方向是<strong>个性化智能体（Personalized Agents）</strong>。我希望构建能够在长期交互中理解用户、持续管理任务，并从经验与反馈中改进的智能伙伴，服务于工作与日常生活。',
-  'current_work': '目前，我主要关注<strong>长期记忆与持续任务管理</strong>：通过 <a href="#tiermem">TierMem</a>，探索智能体如何高效利用历史交互，同时保留重要细节；通过 <a href="#os-native">OS-native Agents</a>，研究智能体持续协调跨应用任务所需的操作系统支持。我也参与多轮语音交互评测 <a href="#mtalk">MTalk-Bench</a>，研究如何可靠地衡量模型的交互能力。',
-  'vision': '希望有一天，这些研究能帮助我们一起构建真正可以长期共事的 <strong>JARVIS</strong>。',
+  'focus': '我的研究方向是<strong>个性化智能体（Personalized Agents）</strong>。我希望构建真正融入个人工作与生活的智能伙伴：<strong>更懂你、更主动、更能干，并在长期协作中不断成长。</strong>',
+  'current_work': '<p><strong>更懂你（Personalization）。</strong>通过长期记忆，让智能体更好地保留和利用交互历史，理解个人偏好、习惯与需求。<a href="#tiermem">TierMem</a> 是这一方向的具体探索；我也希望进一步研究智能体如何从经验与反馈中持续改进。</p><p><strong>更主动、更能干（Proactive Agency）。</strong>研究智能体如何感知动态环境、把握行动时机，并利用操作系统与应用的能力，自主、可靠地完成真实世界中的复杂任务与协作。<a href="#os-native">OS-native Agents</a> 探索所需的系统支持，并以持续任务管理作为验证场景。</p><p>我也参与 <a href="#mtalk">MTalk-Bench</a> 等多轮交互评测研究，关注如何可靠地衡量模型的交互能力。</p>',
+  'vision': '期待和大家一起探索、一起构建，逐步走向我们想象中的 <strong>JARVIS</strong>。',
   'research': '研究工作', 'research_en': 'Selected research',
   'education': '教育背景', 'education_en': 'Education',
   'edu': [('2025.09 — 至今', '香港中文大学（深圳）', '人工智能研究型硕士 · 人工智能学院', '导师：王本友教授'), ('2020.09 — 2024.07', '西安交通大学', '数学与应用数学 · 理学学士', '')],
@@ -24,15 +24,15 @@ TEXT = {
   'image_hint': '查看完整框架图', 'portrait': '朱淇铭在海边看日落',
   'contact': '欢迎交流个性化智能体、长期记忆与人机协作相关的研究和实践。',
   'footer': '基于', 'template': '学术主页模板', 'updated': '更新于 2026 年 10 月',
-  'description': '朱淇铭，香港中文大学（深圳）研究型硕士生。研究个性化智能体，关注长期记忆、持续任务管理与多轮交互评测，探索能够长期理解用户的智能伙伴。',
+  'description': '朱淇铭，香港中文大学（深圳）研究型硕士生。研究个性化智能体，探索更懂你、能够主动行动，并在长期协作中持续成长的个人智能伙伴。',
  },
  'en': {
   'name': 'Qiming Zhu', 'other_name': '朱淇铭', 'title': 'Qiming Zhu · 朱淇铭',
   'nav': ['About', 'Research', 'Education'], 'skip': 'Skip to main content',
   'intro': 'I am a master’s student in the School of Artificial Intelligence at <a href="https://www.cuhk.edu.cn/en" target="_blank" rel="noopener noreferrer">The Chinese University of Hong Kong, Shenzhen</a>, advised by <a href="https://wabyking.github.io/" target="_blank" rel="noopener noreferrer">Prof. Benyou Wang</a>.',
-  'focus': 'My research focuses on <strong>personalized AI agents</strong>. I aim to build agents that understand their users over time, reliably manage ongoing tasks, and learn from experience and feedback, in work and everyday life.',
-  'current_work': 'My current work focuses on <strong>long-term memory and ongoing task management</strong>. In <a href="#tiermem">TierMem</a>, I study how agents can use interaction history efficiently while retaining important details. In <a href="#os-native">OS-native Agents</a>, I explore the operating system support needed for agents to manage ongoing tasks across applications. I also work on reliable evaluation of multi-turn spoken interaction through <a href="#mtalk">MTalk-Bench</a>.',
-  'vision': 'I hope these efforts bring us closer to building a <strong>JARVIS</strong> we can work with over the long term.',
+  'focus': 'My research focuses on <strong>personalized AI agents</strong>. I aim to build capable companions for work and everyday life: agents that <strong>understand you, act proactively, and continually improve</strong> through long-term collaboration.',
+  'current_work': '<p><strong>Personalization.</strong> I study long-term memory as a foundation for agents to use interaction history and understand individual preferences, habits, and needs. <a href="#tiermem">TierMem</a> is one step in this direction. I also hope to explore how agents can adapt through experience and feedback.</p><p><strong>Proactive agency.</strong> I study how agents can perceive changing environments, decide when to act, and use OS and application capabilities to act autonomously and reliably on complex real-world tasks. <a href="#os-native">OS-native Agents</a> explores the system support this requires, with ongoing task management as a testbed.</p><p>I also contribute to multi-turn interaction evaluation through <a href="#mtalk">MTalk-Bench</a>, studying how to reliably assess models’ interaction capabilities.</p>',
+  'vision': 'Let’s explore and build together, taking steps toward the <strong>JARVIS</strong> we envision.',
   'research': 'Selected research', 'research_en': '',
   'education': 'Education', 'education_en': '',
   'edu': [('Sep 2025 — Present', 'The Chinese University of Hong Kong, Shenzhen', 'Research master’s in Artificial Intelligence · School of AI', 'Advisor: Prof. Benyou Wang'), ('Sep 2020 — Jul 2024', 'Xi’an Jiaotong University', 'B.Sc. in Mathematics and Applied Mathematics', '')],
@@ -41,7 +41,7 @@ TEXT = {
   'image_hint': 'View full framework', 'portrait': 'Qiming Zhu watching the sunset by the sea',
   'contact': 'I welcome conversations and collaborations on personalized agents, agent memory, and human–AI interaction.',
   'footer': 'Adapted from', 'template': 'academic homepage template', 'updated': 'Updated October 2026',
-  'description': 'Qiming Zhu is a master’s student at CUHK-Shenzhen researching personalized AI agents, with a focus on long-term memory, ongoing task management, and multi-turn interaction evaluation.',
+  'description': 'Qiming Zhu researches personalized AI agents at CUHK-Shenzhen: building agents that understand you, act proactively, and continually improve through long-term collaboration.',
  }
 }
 
@@ -136,10 +136,10 @@ for lang, t in TEXT.items():
   <main id="main" class="page">
     <section id="about" class="about-section" aria-labelledby="name">
       <div class="bio">
-        <p class="eyebrow">PERSONALIZED AGENTS</p>
+        <p class="eyebrow">UNDERSTAND · ACT · EVOLVE</p>
         <h1 id="name">{t['name']}<span class="other-name">{t['other_name']}</span></h1>
         <p>{t['intro']}</p><p>{t['focus']}</p>
-        <p class="current-work">{t['current_work']}</p>
+        <div class="research-directions">{t['current_work']}</div>
         <p class="vision">{t['vision']}</p>
         <div class="contact-links">
           <a href="mailto:225085006@link.cuhk.edu.cn">Email <span aria-hidden="true">↗</span></a>

@@ -20,8 +20,8 @@
       "code_visibility": "private",
       "demo": "https://qiming-zhu.github.io/OSNativeAgent-trajectories/demo/",
       "summary": {
-        "zh": "将状态感知、跨应用能力调用与授权机制纳入智能体架构，并构建 DynamicWorld，评测环境与用户需求变化下的持续任务管理。",
-        "en": "The framework brings state awareness, cross-application capabilities, and authorization into the agent architecture. DynamicWorld evaluates ongoing task management as environments and user needs change."
+        "zh": "将状态感知、跨应用能力调用与授权机制纳入智能体架构，并构建 DynamicWorld，以环境和用户需求变化下的持续任务管理为评测场景。",
+        "en": "The framework brings state awareness, cross-application capabilities, and authorization into the agent architecture. DynamicWorld uses ongoing task management to evaluate agents as environments and user needs change."
       },
       "image": "images/research/os-native-framework.png",
       "image_alt": {
@@ -35,8 +35,8 @@
         "en": "Research project · 2026"
       },
       "contribution": {
-        "zh": "研究智能体持续管理手机任务所需的操作系统原生支持。",
-        "en": "Exploring the native OS support agents need to manage ongoing mobile tasks."
+        "zh": "探索智能体在动态环境中自主、主动、可靠地行动所需的操作系统支持。",
+        "en": "Exploring OS support for autonomous, proactive, and reliable action in dynamic environments."
       },
       "thumbnail_alt": {
         "zh": "概念示意：智能体在状态变化后持续协调跨应用任务。",

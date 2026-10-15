@@ -10,3 +10,5 @@
 
 /* Keep the aspiration quieter than the research statement. */
 .bio p.vision{font-size:13px;line-height:1.9;color:#76664f;margin:20px 0 0}.summary strong{font-weight:600;color:#3d484c}@media(max-width:700px){.bio p.vision{font-size:13px}.portrait{margin-top:32px}}@media(max-width:460px){.bio p.vision{margin-top:0}.portrait{margin:0}}
+
+.research-directions{min-width:0}.research-directions p+p{margin-top:15px}
