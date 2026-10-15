@@ -70,7 +70,6 @@ for lang, t in TEXT.items():
         <article class="publication" id="{e(p['id'])}">
           <a class="research-figure" href="{e(img)}" data-lightbox data-figure-caption="{e(p['image_alt'][lang], quote=True)}" aria-label="{t['figure']}: {e(p['short_title'])}">
             <img src="{e(img)}" alt="{e(p['image_alt'][lang])}" loading="lazy" decoding="async" width="{p['image_width']}" height="{p['image_height']}">
-            <span class="figure-hint">{t['image_hint']} ↗</span>
           </a>
           <div class="publication-copy">
             <div class="paper-meta"><span>{e(p['status'][lang])}</span></div>
