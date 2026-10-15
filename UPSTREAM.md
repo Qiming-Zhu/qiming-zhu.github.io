@@ -7,5 +7,3 @@ The portrait introduction, narrow academic page, warm accent, and illustrated pu
 Personal portrait: `me.jpg`, provided by Qiming Zhu. OS-native architecture figure: supplied by Qiming Zhu. TierMem overview: official repository `FreedomIntelligence/Tiermem/frame.jpg`. MTalk-Bench overview: Figure 1 of arXiv:2508.18240v2.
 
 No license is inferred for the upstream repository or third-party research figures. Attribution and source links are preserved.
-
-三个 `*-thumbnail.svg` 为本主页绘制的概念示意，概括各项工作的核心关系；点击入口展示上面列明来源的完整原图。

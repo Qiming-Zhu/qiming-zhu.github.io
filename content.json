@@ -37,12 +37,7 @@
       "contribution": {
         "zh": "探索智能体在动态环境中自主、主动、可靠地行动所需的操作系统支持。",
         "en": "Exploring OS support for autonomous, proactive, and reliable action in dynamic environments."
-      },
-      "thumbnail_alt": {
-        "zh": "概念示意：智能体在状态变化后持续协调跨应用任务。",
-        "en": "Conceptual overview: an ongoing task session observes changes and acts across applications."
-      },
-      "thumbnail": "images/research/os-native-thumbnail.svg"
+      }
     },
     {
       "id": "tiermem",
@@ -77,12 +72,7 @@
       "contribution": {
         "zh": "让长期记忆兼顾使用效率与细节保留。",
         "en": "Balancing efficient long-term memory with access to important details."
-      },
-      "thumbnail_alt": {
-        "zh": "概念示意：压缩记忆按需回溯原始证据，并依据证据更新记忆。",
-        "en": "Conceptual overview: compact memory connects to raw evidence through retrieval and evidence-backed updates."
-      },
-      "thumbnail": "images/research/tiermem-thumbnail.svg"
+      }
     },
     {
       "id": "mtalk",
@@ -125,12 +115,7 @@
       "contribution": {
         "zh": "评估语音模型在多轮对话中理解内容、语音线索与环境声音的能力。",
         "en": "Evaluating content, vocal cues, and ambient sound in multi-turn spoken interaction."
-      },
-      "thumbnail_alt": {
-        "zh": "概念示意：多轮语音对话通过成对比较与细粒度评分进行评测。",
-        "en": "Conceptual overview: multi-turn speech is evaluated through pairwise comparisons and rubrics."
-      },
-      "thumbnail": "images/research/mtalk-thumbnail.svg"
+      }
     }
   ]
 }

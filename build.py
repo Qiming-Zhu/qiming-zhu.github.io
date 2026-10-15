@@ -21,7 +21,7 @@ TEXT = {
   'edu': [('2025.09 — 至今', '香港中文大学（深圳）', '人工智能研究型硕士 · 人工智能学院', '导师：王本友教授'), ('2020.09 — 2024.07', '西安交通大学', '数学与应用数学 · 理学学士', '')],
   'project': '项目主页', 'paper': '论文', 'code': '代码', 'demo': '在线演示', 'dataset': '数据集',
   'figure': '查看完整研究配图', 'close': '关闭图片',
-  'image_hint': '查看完整框架图', 'portrait': '朱淇铭在海边看日落',
+  'image_hint': '点击图片放大', 'portrait': '朱淇铭在海边看日落',
   'contact': '欢迎交流个性化智能体、长期记忆与人机协作相关的研究和实践。',
   'footer': '基于', 'template': '学术主页模板', 'updated': '更新于 2026 年 10 月',
   'description': '朱淇铭，香港中文大学（深圳）研究型硕士生。研究个性化智能体，探索更懂你、能够主动行动，并在长期协作中持续成长的个人智能伙伴。',
@@ -38,7 +38,7 @@ TEXT = {
   'edu': [('Sep 2025 — Present', 'The Chinese University of Hong Kong, Shenzhen', 'Research master’s in Artificial Intelligence · School of AI', 'Advisor: Prof. Benyou Wang'), ('Sep 2020 — Jul 2024', 'Xi’an Jiaotong University', 'B.Sc. in Mathematics and Applied Mathematics', '')],
   'project': 'Project', 'paper': 'Paper', 'code': 'Code', 'demo': 'Live demo', 'dataset': 'Dataset',
   'figure': 'View full research figure', 'close': 'Close image',
-  'image_hint': 'View full framework', 'portrait': 'Qiming Zhu watching the sunset by the sea',
+  'image_hint': 'Click to enlarge', 'portrait': 'Qiming Zhu watching the sunset by the sea',
   'contact': 'I welcome conversations and collaborations on personalized agents, agent memory, and human–AI interaction.',
   'footer': 'Adapted from', 'template': 'academic homepage template', 'updated': 'Updated October 2026',
   'description': 'Qiming Zhu researches personalized AI agents at CUHK-Shenzhen: building agents that understand you, act proactively, and continually improve through long-term collaboration.',
@@ -66,11 +66,10 @@ for lang, t in TEXT.items():
                     links.append(external(p[key], t[labels.get(key, key)], 'resource-link'))
         title_url = p.get('paper') or p['homepage']
         img = prefix + p['image']
-        thumbnail = prefix + p.get('thumbnail', p['image'])
         cards.append(f'''
         <article class="publication" id="{e(p['id'])}">
           <a class="research-figure" href="{e(img)}" data-lightbox data-figure-caption="{e(p['image_alt'][lang], quote=True)}" aria-label="{t['figure']}: {e(p['short_title'])}">
-            <img src="{e(thumbnail)}" alt="{e(p['thumbnail_alt'][lang])}" loading="lazy" decoding="async" width="448" height="300">
+            <img src="{e(img)}" alt="{e(p['image_alt'][lang])}" loading="lazy" decoding="async" width="{p['image_width']}" height="{p['image_height']}">
             <span class="figure-hint">{t['image_hint']} ↗</span>
           </a>
           <div class="publication-copy">
