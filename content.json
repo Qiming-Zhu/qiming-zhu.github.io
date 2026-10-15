@@ -15,18 +15,13 @@
         "Benyou Wang"
       ],
       "year": 2026,
-      "venue": "OS-native Agents · 2026",
-      "role": {
-        "zh": "第一作者",
-        "en": "First author"
-      },
       "homepage": "https://qiming-zhu.github.io/OSNativeAgent-trajectories/",
       "code": "https://github.com/FreedomIntelligence/OSNativeAgent",
       "code_visibility": "private",
       "demo": "https://qiming-zhu.github.io/OSNativeAgent-trajectories/demo/",
       "summary": {
-        "zh": "将 Agent 接入操作系统原生的状态、能力与信任机制，在动态移动环境中持续协调跨应用任务；并构建可重放的 Android 基准 DynamicWorld。",
-        "en": "Integrating agents with native OS state, capability, and trust mechanisms to coordinate ongoing tasks in a changing mobile world, with the replayable Android benchmark DynamicWorld."
+        "zh": "将状态感知、跨应用能力调用与授权机制纳入智能体架构，并构建 DynamicWorld，评测环境与用户需求变化下的持续任务管理。",
+        "en": "The framework brings state awareness, cross-application capabilities, and authorization into the agent architecture. DynamicWorld evaluates ongoing task management as environments and user needs change."
       },
       "image": "images/research/os-native-framework.png",
       "image_alt": {
@@ -34,7 +29,20 @@
         "en": "OS-native Agent framework with persistent task sessions, native state monitors, cross-application capabilities, and authorization."
       },
       "image_width": 1698,
-      "image_height": 780
+      "image_height": 780,
+      "status": {
+        "zh": "研究项目 · 2026",
+        "en": "Research project · 2026"
+      },
+      "contribution": {
+        "zh": "研究智能体持续管理手机任务所需的操作系统原生支持。",
+        "en": "Exploring the native OS support agents need to manage ongoing mobile tasks."
+      },
+      "thumbnail_alt": {
+        "zh": "概念示意：智能体在状态变化后持续协调跨应用任务。",
+        "en": "Conceptual overview: an ongoing task session observes changes and acts across applications."
+      },
+      "thumbnail": "images/research/os-native-thumbnail.svg"
     },
     {
       "id": "tiermem",
@@ -48,17 +56,12 @@
         "Benyou Wang"
       ],
       "year": 2026,
-      "venue": "COLM 2026",
-      "role": {
-        "en": "First author",
-        "zh": "第一作者"
-      },
       "homepage": null,
       "paper": "https://openreview.net/forum?id=svKCa4itcd",
       "code": "https://github.com/FreedomIntelligence/Tiermem",
       "summary": {
-        "en": "A two-tier agent memory framework that uses compact summaries by default and recovers raw evidence when more detail is needed. Provenance links and verified write-back help balance answer quality, context cost, and latency over long interactions.",
-        "zh": "让 Agent 默认使用精简摘要，在证据不足时按需回溯原始日志。通过来源关联与验证后的记忆回写，在长期交互中兼顾回答质量、上下文开销和延迟。"
+        "zh": "优先使用压缩记忆，在证据不足时回溯原始记录，并将有依据的信息更新回记忆。",
+        "en": "Agents use compact memory by default, retrieve raw records when evidence is insufficient, and update memory with evidence-backed information."
       },
       "image": "images/research/tiermem-overview.jpg",
       "image_alt": {
@@ -66,7 +69,20 @@
         "zh": "TierMem 架构：通过路由器与证据回写连接摘要记忆和原始日志。"
       },
       "image_width": 1440,
-      "image_height": 449
+      "image_height": 449,
+      "status": {
+        "zh": "COLM 2026",
+        "en": "COLM 2026"
+      },
+      "contribution": {
+        "zh": "让长期记忆兼顾使用效率与细节保留。",
+        "en": "Balancing efficient long-term memory with access to important details."
+      },
+      "thumbnail_alt": {
+        "zh": "概念示意：压缩记忆按需回溯原始证据，并依据证据更新记忆。",
+        "en": "Conceptual overview: compact memory connects to raw evidence through retrieval and evidence-backed updates."
+      },
+      "thumbnail": "images/research/tiermem-thumbnail.svg"
     },
     {
       "id": "mtalk",
@@ -87,18 +103,13 @@
         "Haizhou Li"
       ],
       "year": 2025,
-      "venue": "arXiv 2025",
-      "role": {
-        "en": "Coauthor",
-        "zh": "共同作者"
-      },
       "homepage": "https://freedomintelligence.github.io/MTalk-Bench/",
       "paper": "https://arxiv.org/abs/2508.18240",
       "code": "https://github.com/FreedomIntelligence/MTalk-Bench",
       "dataset": "https://huggingface.co/datasets/FreedomIntelligence/MTalk-Bench",
       "summary": {
-        "en": "A multi-turn speech-to-speech benchmark covering semantic content, paralinguistic cues, and ambient sounds. It combines Arena-style comparisons with hierarchical rubrics to diagnose model capabilities and assess the reliability of human and LLM judges.",
-        "zh": "面向多轮语音对话的评测基准，覆盖语义信息、副语言线索与环境声音。结合 Arena 成对比较与分层 Rubrics，分析模型能力以及人工与 LLM 裁判的评测可靠性。"
+        "zh": "结合成对比较与细粒度评分，分析模型表现及不同评测方法的可靠性。",
+        "en": "Pairwise comparisons and detailed rubrics help analyze model performance and the reliability of different evaluation methods."
       },
       "image": "images/research/mtalk-overview.png",
       "image_alt": {
@@ -106,7 +117,20 @@
         "zh": "MTalk-Bench 总览：从多维语音对话构造到 Arena 成对比较与 Rubrics 细粒度评测。"
       },
       "image_width": 1600,
-      "image_height": 448
+      "image_height": 448,
+      "status": {
+        "zh": "预印本 · 2025",
+        "en": "Preprint · 2025"
+      },
+      "contribution": {
+        "zh": "评估语音模型在多轮对话中理解内容、语音线索与环境声音的能力。",
+        "en": "Evaluating content, vocal cues, and ambient sound in multi-turn spoken interaction."
+      },
+      "thumbnail_alt": {
+        "zh": "概念示意：多轮语音对话通过成对比较与细粒度评分进行评测。",
+        "en": "Conceptual overview: multi-turn speech is evaluated through pairwise comparisons and rubrics."
+      },
+      "thumbnail": "images/research/mtalk-thumbnail.svg"
     }
   ]
 }

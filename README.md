@@ -17,10 +17,10 @@ python3 -m http.server 8765 --bind 127.0.0.1
 
 ## 更新内容
 
-- `content.json`：论文、作者、链接、配图和中英文简介。
+- `content.json`：论文、作者、公开状态、链接和中英文简介；`contribution` 为卡片加粗的贡献概括。
 - `build.py`：中英文个人介绍、教育信息和页面模板。
 - `images/me.jpg`：用户提供的照片；页面仅通过 CSS 控制展示范围，原图保留。
-- `images/research/`：研究配图，点击后可查看原图。
+- `images/research/`：`*-thumbnail.svg` 为概念缩略图；`thumbnail` 控制卡片预览，`image` 指向点击后显示的完整原图。
 - `stylesheet.css`：样式和手机布局。
 - `site.js`：语言选择、配图放大。
 

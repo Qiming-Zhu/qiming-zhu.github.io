@@ -2,32 +2,31 @@
 
 [个人网站](https://qiming-zhu.github.io/) · [English](https://qiming-zhu.github.io/en/) · [Google Scholar](https://scholar.google.com/citations?user=vwQ1_0AAAAAJ) · [Email](mailto:225085006@link.cuhk.edu.cn)
 
-我是香港中文大学（深圳）的人工智能研究型硕士生，导师为王本友教授。
+我是香港中文大学（深圳）人工智能学院的研究型硕士生，导师为王本友教授。
 
-我致力于推进 **个性化智能体（Personalized Agents）**，让 working agents 和 mobile agents 在工作与日常生活中，成为理解个人、持续协作的伙伴。
+我的研究方向是 **个性化智能体（Personalized Agents）**。我希望构建能够在长期交互中理解用户、持续管理任务，并从交互经验与反馈中改进的智能伙伴，服务于工作与日常生活。
 
-- **更懂你。** 我研究长期记忆（memory），并探索 RSI，希望 Agent 能从交互历史与反馈中积累经验，更好地理解个人偏好和需求，持续改进协作方式。
-- **更能处理和管理任务。** 通过 OS-native 支持，我探索如何让 Agent 在需求与环境变化时，持续跟踪目标、协调跨时间与跨应用的任务；多轮交互评测则帮助我检验这些能力是否真正服务于用户。
+目前，我主要关注 **长期记忆与持续任务管理**：通过 **TierMem**，探索智能体如何高效利用交互历史，同时保留重要细节；通过 **OS-native Agents**，研究持续协调跨应用任务所需的操作系统支持。此外，我也参与多轮语音交互评测 **MTalk-Bench**，研究如何可靠地衡量语音模型的交互能力。
 
-期待和你一起探索、一起构建，逐步走向我们想象中的 **JARVIS**。
+希望有一天，这些研究能帮助我们一起构建可以长期共事的 **JARVIS**。
 
 ## Selected Research
 
 ### OS-Native Agents: Managing User Tasks in the Dynamic Mobile World
 
-面向需求与环境持续变化的手机任务，研究操作系统如何为 Agent 提供状态、能力与信任支持，并构建 DynamicWorld 评测环境。
+研究智能体持续管理手机任务所需的操作系统原生支持。将状态感知、跨应用能力调用与授权机制纳入 Agent 架构，并构建 DynamicWorld，评测环境与用户需求变化下的持续任务管理。
 
 [项目主页](https://qiming-zhu.github.io/OSNativeAgent-trajectories)
 
 ### TierMem: Balancing Compressed Memory and Raw Evidence for Long-Horizon Agent Memory
 
-将摘要与原始证据关联：优先使用紧凑记忆，在证据不足时回溯原始日志，并将验证后的信息写回记忆。
+让长期记忆兼顾使用效率与细节保留。优先使用压缩记忆，在证据不足时回溯原始日志，并将验证后的信息写回记忆。
 
 [论文](https://openreview.net/forum?id=svKCa4itcd) · [早期预印本](https://arxiv.org/abs/2602.17913) · [代码](https://github.com/FreedomIntelligence/Tiermem)
 
 ### MTalk-Bench: Evaluating Speech-to-Speech Models in Multi-Turn Dialogues via Arena-style and Rubrics Protocols
 
-从语义、副语言和环境声三个维度评估多轮语音交互，结合 Arena-style 与 Rubrics 协议，研究模型能力与自动裁判的可靠性。
+评估语音模型在多轮对话中理解语义、副语言线索与环境声音的能力。结合 Arena 成对比较与 Rubrics 细粒度评分，分析模型表现及评测方法的可靠性。
 
 [项目主页](https://freedomintelligence.github.io/MTalk-Bench/) · [论文](https://arxiv.org/abs/2508.18240) · [代码](https://github.com/FreedomIntelligence/MTalk-Bench)
 

@@ -13,8 +13,9 @@ if (viewer && typeof viewer.showModal === 'function') {
       returnFocus = link;
       const image = link.querySelector('img');
       viewer.querySelector('img').src = link.href;
-      viewer.querySelector('img').alt = image.alt;
-      viewer.querySelector('p').textContent = image.alt;
+      const caption = link.dataset.figureCaption || image.alt;
+      viewer.querySelector('img').alt = caption;
+      viewer.querySelector('p').textContent = caption;
       viewer.showModal();
       document.body.classList.add('viewer-open');
     });

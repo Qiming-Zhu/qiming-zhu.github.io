@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="448" height="300" viewBox="0 0 448 300" role="img" aria-labelledby="title desc">
+  <title id="title">TierMem</title>
+  <desc id="desc">Compact memory is linked to raw evidence, with evidence-backed updates.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="m1.5 1.5 4 2.5-4 2.5" fill="none" stroke="#8c978f" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+  </defs>
+  <rect x="1" y="1" width="446" height="298" rx="16" fill="#fcfaf6" stroke="#e8e3db"/>
+  <g font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" fill="#303737">
+    <text x="28" y="44" font-size="27" font-weight="650" letter-spacing="-.5">TierMem</text>
+    <rect x="28" y="76" width="168" height="140" rx="13" fill="#e2eee7" stroke="#c7ddd0"/>
+    <rect x="252" y="76" width="168" height="140" rx="13" fill="#f6ead7" stroke="#e5d4b9"/>
+    <g fill="#f7fbf8" stroke="#628475" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <rect x="92" y="100" width="40" height="29" rx="5"/>
+      <path d="M100 109h23M100 117h16"/>
+    </g>
+    <g fill="#fffaf3" stroke="#ad7b39" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <rect x="316" y="99" width="35" height="35" rx="4"/>
+      <path d="M323 94h33v33M324 108h19M324 116h19M324 124h12"/>
+    </g>
+    <path d="M207 137h32M241 157h-32" fill="none" stroke="#8c978f" stroke-width="2" marker-end="url(#arrow)"/>
+    <text x="112" y="167" text-anchor="middle" font-size="23" font-weight="600">Compact</text>
+    <text x="112" y="193" text-anchor="middle" font-size="23" font-weight="600">memory</text>
+    <text x="336" y="167" text-anchor="middle" font-size="23" font-weight="600">Raw</text>
+    <text x="336" y="193" text-anchor="middle" font-size="23" font-weight="600">evidence</text>
+    <path d="M336 216v12H112v-12" fill="none" stroke="#b2baaf" stroke-width="1.6"/>
+    <rect x="65" y="241" width="318" height="34" rx="17" fill="#fff" stroke="#dfded6"/>
+    <path d="m84 258 4 4 7-9" fill="none" stroke="#6b8a75" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="237" y="264" text-anchor="middle" font-size="20" font-weight="550">Evidence-backed update</text>
+  </g>
+</svg>
