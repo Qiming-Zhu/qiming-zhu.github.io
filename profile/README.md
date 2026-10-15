@@ -8,7 +8,7 @@
 
 我主要探索两个方向：
 
-- **更懂你（Personalization）。** 探索通过长期记忆理解用户，并从交互经验与反馈中持续改进。当前工作 **TierMem** 研究如何高效利用交互历史，同时保留重要细节。
+- **更懂你（Personalization）。** 探索通过长期记忆理解用户，并从交互经验与反馈中持续改进。当前工作 **TierMem** 探索不同粒度记忆的动态组织与按需加载。
 - **更主动、更能干（Proactive Agency）。** 探索智能体如何感知动态环境、选择合适的行动时机，利用操作系统与应用能力，自主可靠地完成真实世界任务并与人协作。当前工作 **OS-native Agents** 研究这一方向所需的系统支持，并以动态手机环境中的持续任务管理作为验证场景。
 
 此外，我也参与多轮语音交互评测 **MTalk-Bench**，研究如何可靠地衡量语音模型的交互能力。
@@ -25,7 +25,7 @@
 
 ### TierMem: Balancing Compressed Memory and Raw Evidence for Long-Horizon Agent Memory
 
-让长期记忆兼顾使用效率与细节保留。优先使用压缩记忆，在证据不足时回溯原始日志，并将验证后的信息写回记忆。
+**按需组织不同粒度的记忆，连接高层指导与具体做法。** 压缩记忆提供高层概览与行动指导，原始记录保留详细信息与操作步骤；智能体根据当前任务动态选择记忆粒度，按需加载相关内容。
 
 [论文](https://openreview.net/forum?id=svKCa4itcd) · [早期预印本](https://arxiv.org/abs/2602.17913) · [代码](https://github.com/FreedomIntelligence/Tiermem)
 

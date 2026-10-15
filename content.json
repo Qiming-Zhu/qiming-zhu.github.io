@@ -55,8 +55,8 @@
       "paper": "https://openreview.net/forum?id=svKCa4itcd",
       "code": "https://github.com/FreedomIntelligence/Tiermem",
       "summary": {
-        "zh": "优先使用压缩记忆，在证据不足时回溯原始记录，并将有依据的信息更新回记忆。",
-        "en": "Agents use compact memory by default, retrieve raw records when evidence is insufficient, and update memory with evidence-backed information."
+        "zh": "压缩记忆提供高层概览与行动指导，原始记录保留详细信息与操作步骤；智能体根据当前任务动态选择记忆粒度，按需加载相关内容。",
+        "en": "Compressed memory provides an overview and high-level guidance, while raw records retain detailed information and step-by-step instructions. Agents select the memory granularity needed for the current task and load relevant content on demand."
       },
       "image": "images/research/tiermem-overview.jpg",
       "image_alt": {
@@ -70,8 +70,8 @@
         "en": "COLM 2026"
       },
       "contribution": {
-        "zh": "让长期记忆兼顾使用效率与细节保留。",
-        "en": "Balancing efficient long-term memory with access to important details."
+        "zh": "按需组织不同粒度的记忆，连接高层指导与具体做法。",
+        "en": "Connecting high-level guidance with detailed instructions through adaptive memory granularity."
       }
     },
     {
