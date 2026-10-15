@@ -17,7 +17,7 @@ python3 -m http.server 8765 --bind 127.0.0.1
 
 ## 更新内容
 
-- `content.json`：论文、作者、链接、配图和中英文简介。
+- `content.json`：论文、作者、链接、配图、中英文简介，以及 Scholar 引用数量与核对日期。
 - `build.py`：中英文个人介绍、教育信息和页面模板。
 - `images/me.jpg`：用户提供的照片；页面仅通过 CSS 控制展示范围，原图保留。
 - `images/research/`：研究配图，点击后可查看原图。
@@ -37,3 +37,5 @@ python3 -m http.server 8765 --bind 127.0.0.1
 当前只展示个人介绍、研究和教育背景。没有实习、工作经历、电话、GPA 或完整简历。OS-native Agents 尚无 arXiv，页面只展示公开项目主页与演示；其代码仓库目前未公开，页面不生成不可访问的代码链接。
 
 配图和模板来源见 [UPSTREAM.md](UPSTREAM.md)。
+
+Scholar 数字是最近一次人工核实的总引用数，页面显示核对日期，不标为实时统计。更新 `content.json` 中的 `scholar.citations` 和 `scholar.checked_on` 后重新生成页面即可。

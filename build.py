@@ -54,6 +54,12 @@ for lang, t in TEXT.items():
     prefix = '' if lang == 'zh' else '../'
     page_url = URL + ('' if lang == 'zh' else 'en/')
     opposite = 'en/' if lang == 'zh' else '../'
+    scholar = DATA['scholar']
+    count = int(scholar['citations'])
+    checked = e(scholar['checked_on'])
+    citation_label = f'{count} 次引用' if lang == 'zh' else f'{count} citations'
+    checked_label = f'截至 {checked}' if lang == 'zh' else f'As of {checked}'
+    scholar_link = f'<span class="scholar-contact"><a href="{e(scholar["profile_url"], quote=True)}" target="_blank" rel="noopener noreferrer" aria-label="Google Scholar · {citation_label} · {checked_label}">Google Scholar <span class="scholar-count">{citation_label}</span> <span aria-hidden="true">↗</span></a><span class="scholar-checked">{checked_label}</span></span>'
     cards = []
     for p in DATA['publications']:
         author_names = [f'<strong>{e(a)}</strong>' if a == 'Qiming Zhu' else e(a) for a in p['authors']]
@@ -142,7 +148,7 @@ for lang, t in TEXT.items():
         <p class="vision">{t['vision']}</p>
         <div class="contact-links">
           <a href="mailto:225085006@link.cuhk.edu.cn">Email <span aria-hidden="true">↗</span></a>
-          {external('https://scholar.google.com/citations?user=vwQ1_0AAAAAJ', 'Google Scholar <span aria-hidden="true">↗</span>')}
+          {scholar_link}
           {external('https://github.com/Qiming-Zhu', 'GitHub <span aria-hidden="true">↗</span>')}
         </div>
       </div>

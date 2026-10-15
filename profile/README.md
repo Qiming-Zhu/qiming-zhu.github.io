@@ -1,6 +1,8 @@
 # 朱淇铭 · Qiming Zhu
 
-[个人网站](https://qiming-zhu.github.io/) · [English](https://qiming-zhu.github.io/en/) · [Google Scholar](https://scholar.google.com/citations?user=vwQ1_0AAAAAJ) · [Email](mailto:225085006@link.cuhk.edu.cn)
+[个人网站](https://qiming-zhu.github.io/) · [English](https://qiming-zhu.github.io/en/) · [Google Scholar · 39 次引用](https://scholar.google.com/citations?user=vwQ1_0AAAAAJ) · [Email](mailto:225085006@link.cuhk.edu.cn)
+
+<sub>引用数据核对日期：2026-10-15。</sub>
 
 我是香港中文大学（深圳）的人工智能研究型硕士生，导师为王本友教授。
 
