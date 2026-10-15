@@ -10,6 +10,3 @@
 
 /* Research motivation: a compact continuation of the personal introduction. */
 .motivation{border-left:2px solid var(--accent-light);padding-left:15px;margin:19px 0 17px}.bio .motivation p{font-size:13px;line-height:1.95;margin-bottom:11px}.bio .motivation p:last-child{margin-bottom:0}.bio p.vision{font-size:13px;color:#6f5a40;margin-top:18px}.about-section:has(.motivation){align-items:start}.about-section:has(.motivation) .portrait{align-self:start;margin-top:46px}@media(max-width:700px){.bio .motivation p{font-size:12px}.motivation{padding-left:12px;margin:0}.about-section:has(.motivation) .portrait{margin-top:32px}}@media(max-width:460px){.motivation{grid-column:1;margin:2px 0}.bio p.vision{grid-column:1;margin-top:0}.about-section:has(.motivation) .portrait{margin-top:0}}
-
-/* Verified Scholar snapshot; keep the source date visible. */
-.contact-links{align-items:flex-start}.scholar-contact{display:inline-flex;flex-direction:column;gap:3px;line-height:1.5}.contact-links .scholar-count{font-size:10px;font-weight:500;color:var(--muted);margin-left:4px}.contact-links .scholar-checked{margin-left:0;font-size:9px;font-weight:400;color:#8b908e;letter-spacing:.1px}
