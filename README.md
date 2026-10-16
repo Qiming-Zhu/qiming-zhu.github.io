@@ -37,3 +37,17 @@ python3 -m http.server 8765 --bind 127.0.0.1
 当前只展示个人介绍、研究和教育背景。没有实习、工作经历、电话、GPA 或完整简历。OS-native Agents 尚无 arXiv，页面只展示公开项目主页与演示；其代码仓库目前未公开，页面不生成不可访问的代码链接。
 
 配图和模板来源见 [UPSTREAM.md](UPSTREAM.md)。
+
+## 私有访问统计
+
+中英文页面共用一个 [GoatCounter](https://www.goatcounter.com/) 账号，已配置为 `qiming-zhu`。更换账号时，将 `content.json` 中的 `analytics.goatcounter_code` 填为后台地址的子域名（例如后台为 `https://example.goatcounter.com`，则只填 `example`），再运行 `python3 build.py` 并发布。留空表示不加载统计脚本。
+
+后台必须保持以下设置：
+
+- **Dashboard viewable by → Only logged in users**，不创建共享链接、不添加其他用户。
+- **Allow adding visitor counts on your website** 不勾选，避免通过公开计数接口读取访问量。
+- **Sites that can embed GoatCounter** 留空。
+
+网站不展示计数器或后台入口。网页源码中的统计地址是公开的收集入口，不能用于读取私有报表；密码、验证码和 API key 不应放入本项目。统计从接入后开始，来源网站可能因浏览器不发送 Referrer 而显示未知。
+
+发布后须用不带登录 Cookie 的请求确认：后台跳转登录页，`/counter/TOTAL.json` 返回 403，`/api/v0/stats/total` 返回 401；再登录后台确认真实页面访问能够入账。

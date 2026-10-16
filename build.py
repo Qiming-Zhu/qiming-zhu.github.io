@@ -3,10 +3,21 @@
 from pathlib import Path
 from html import escape as e
 import json
+import re
 
 ROOT = Path(__file__).resolve().parent
 DATA = json.loads((ROOT / 'content.json').read_text())
 URL = DATA['site_url'].rstrip('/') + '/'
+GOATCOUNTER_CODE = DATA.get('analytics', {}).get('goatcounter_code', '')
+if not isinstance(GOATCOUNTER_CODE, str) or (
+    GOATCOUNTER_CODE and not re.fullmatch(r'[a-z0-9](?:[a-z0-9-]{0,61}[a-z0-9])?', GOATCOUNTER_CODE)
+):
+    raise ValueError('analytics.goatcounter_code must be a GoatCounter account name, not a URL or API key')
+ANALYTICS_SCRIPT = (
+    f'\n  <script data-goatcounter="https://{GOATCOUNTER_CODE}.goatcounter.com/count" '
+    'async src="https://gc.zgo.at/count.js"></script>'
+    if GOATCOUNTER_CODE else ''
+)
 
 TEXT = {
  'zh': {
@@ -119,7 +130,7 @@ for lang, t in TEXT.items():
     else if (saved === 'en') location.replace('en/?lang=en' + location.hash);
   }} catch (_) {{}}
   </script>
-  <script src="{prefix}site.js" defer></script>
+  <script src="{prefix}site.js" defer></script>{ANALYTICS_SCRIPT}
 </head>
 <body>
   <a class="skip-link" href="#main">{t['skip']}</a>
