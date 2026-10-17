@@ -1,9 +1,4 @@
 'use strict';
-document.querySelectorAll('[data-language-link]').forEach(link => {
-  link.addEventListener('click', () => {
-    try { localStorage.setItem('qiming-language', link.dataset.languageLink); } catch (_) {}
-  });
-});
 const viewer = document.getElementById('image-viewer');
 if (viewer && typeof viewer.showModal === 'function') {
   let returnFocus;

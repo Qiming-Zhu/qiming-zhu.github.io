@@ -7,14 +7,14 @@
   <title>Qiming Zhu · 朱淇铭 | Personal website</title>
   <meta name="description" content="Qiming Zhu researches personalized AI agents at CUHK-Shenzhen: building agents that understand you, act proactively, and continually improve through long-term collaboration.">
   <meta name="author" content="Qiming Zhu">
-  <link rel="canonical" href="https://qiming-zhu.github.io/en/">
-  <link rel="alternate" hreflang="zh-CN" href="https://qiming-zhu.github.io/">
-  <link rel="alternate" hreflang="en" href="https://qiming-zhu.github.io/en/">
+  <link rel="canonical" href="https://qiming-zhu.github.io/">
+  <link rel="alternate" hreflang="zh-CN" href="https://qiming-zhu.github.io/zh/">
+  <link rel="alternate" hreflang="en" href="https://qiming-zhu.github.io/">
   <link rel="alternate" hreflang="x-default" href="https://qiming-zhu.github.io/">
   <meta property="og:type" content="profile">
   <meta property="og:title" content="Qiming Zhu · 朱淇铭">
   <meta property="og:description" content="Qiming Zhu researches personalized AI agents at CUHK-Shenzhen: building agents that understand you, act proactively, and continually improve through long-term collaboration.">
-  <meta property="og:url" content="https://qiming-zhu.github.io/en/">
+  <meta property="og:url" content="https://qiming-zhu.github.io/">
   <meta property="og:image" content="https://qiming-zhu.github.io/images/me.jpg">
   <meta property="og:locale" content="en_US">
   <meta name="twitter:card" content="summary">
@@ -22,11 +22,14 @@
   <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Person", "name": "Qiming Zhu", "alternateName": "朱淇铭", "url": "https://qiming-zhu.github.io/", "image": "https://qiming-zhu.github.io/images/me.jpg", "affiliation": {"@type": "CollegeOrUniversity", "name": "The Chinese University of Hong Kong, Shenzhen"}, "sameAs": ["https://github.com/Qiming-Zhu", "https://scholar.google.com/citations?user=vwQ1_0AAAAAJ"]}</script>
   <script>
   try {
-    const explicit = new URL(location.href).searchParams.get('lang');
-    const saved = localStorage.getItem('qiming-language');
-    if (explicit === 'zh' || explicit === 'en') localStorage.setItem('qiming-language', explicit);
-    else if ('en' === 'en') localStorage.setItem('qiming-language', 'en');
-    else if (saved === 'en') location.replace('en/?lang=en' + location.hash);
+    const url = new URL(location.href);
+    const explicit = url.searchParams.get('lang');
+    if ((explicit === 'zh' || explicit === 'en') && explicit !== 'en') {
+      url.pathname = new URL(explicit === 'zh' ? '../zh/' : '../', location.href).pathname;
+      url.searchParams.delete('lang');
+      window.goatcounter = { no_onload: true };
+      location.replace(url.href);
+    }
   } catch (_) {}
   </script>
   <script src="../site.js" defer></script>
@@ -37,9 +40,9 @@
   <header class="site-header"><div class="header-inner">
     <nav aria-label="Main navigation"><a href="#about">About</a><a href="#research">Research</a><a href="#education">Education</a></nav>
     <div class="language-switch" aria-label="Language">
-      <a href="../?lang=zh" lang="zh-CN" data-language-link="zh" >中文</a>
+      <a href="../" lang="en" data-language-link="en" aria-current="page">EN</a>
       <span aria-hidden="true">/</span>
-      <a href="?lang=en" lang="en" data-language-link="en" aria-current="page">EN</a>
+      <a href="../zh/" lang="zh-CN" data-language-link="zh" >中文</a>
     </div>
   </div></header>
   <main id="main" class="page">

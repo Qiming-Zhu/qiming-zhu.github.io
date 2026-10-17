@@ -1,112 +1,115 @@
 <!doctype html>
-<html lang="zh-CN" data-language="zh">
+<html lang="en" data-language="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="color-scheme" content="light">
-  <title>朱淇铭 · Qiming Zhu | 个人主页</title>
-  <meta name="description" content="朱淇铭，香港中文大学（深圳）研究型硕士生。研究个性化智能体，探索更懂你、能够主动行动，并在长期协作中持续成长的个人智能伙伴。">
+  <title>Qiming Zhu · 朱淇铭 | Personal website</title>
+  <meta name="description" content="Qiming Zhu researches personalized AI agents at CUHK-Shenzhen: building agents that understand you, act proactively, and continually improve through long-term collaboration.">
   <meta name="author" content="Qiming Zhu">
   <link rel="canonical" href="https://qiming-zhu.github.io/">
-  <link rel="alternate" hreflang="zh-CN" href="https://qiming-zhu.github.io/">
-  <link rel="alternate" hreflang="en" href="https://qiming-zhu.github.io/en/">
+  <link rel="alternate" hreflang="zh-CN" href="https://qiming-zhu.github.io/zh/">
+  <link rel="alternate" hreflang="en" href="https://qiming-zhu.github.io/">
   <link rel="alternate" hreflang="x-default" href="https://qiming-zhu.github.io/">
   <meta property="og:type" content="profile">
-  <meta property="og:title" content="朱淇铭 · Qiming Zhu">
-  <meta property="og:description" content="朱淇铭，香港中文大学（深圳）研究型硕士生。研究个性化智能体，探索更懂你、能够主动行动，并在长期协作中持续成长的个人智能伙伴。">
+  <meta property="og:title" content="Qiming Zhu · 朱淇铭">
+  <meta property="og:description" content="Qiming Zhu researches personalized AI agents at CUHK-Shenzhen: building agents that understand you, act proactively, and continually improve through long-term collaboration.">
   <meta property="og:url" content="https://qiming-zhu.github.io/">
   <meta property="og:image" content="https://qiming-zhu.github.io/images/me.jpg">
-  <meta property="og:locale" content="zh_CN">
+  <meta property="og:locale" content="en_US">
   <meta name="twitter:card" content="summary">
   <link rel="stylesheet" href="stylesheet.css">
   <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Person", "name": "Qiming Zhu", "alternateName": "朱淇铭", "url": "https://qiming-zhu.github.io/", "image": "https://qiming-zhu.github.io/images/me.jpg", "affiliation": {"@type": "CollegeOrUniversity", "name": "The Chinese University of Hong Kong, Shenzhen"}, "sameAs": ["https://github.com/Qiming-Zhu", "https://scholar.google.com/citations?user=vwQ1_0AAAAAJ"]}</script>
   <script>
   try {
-    const explicit = new URL(location.href).searchParams.get('lang');
-    const saved = localStorage.getItem('qiming-language');
-    if (explicit === 'zh' || explicit === 'en') localStorage.setItem('qiming-language', explicit);
-    else if ('zh' === 'en') localStorage.setItem('qiming-language', 'en');
-    else if (saved === 'en') location.replace('en/?lang=en' + location.hash);
+    const url = new URL(location.href);
+    const explicit = url.searchParams.get('lang');
+    if ((explicit === 'zh' || explicit === 'en') && explicit !== 'en') {
+      url.pathname = new URL(explicit === 'zh' ? 'zh/' : './', location.href).pathname;
+      url.searchParams.delete('lang');
+      window.goatcounter = { no_onload: true };
+      location.replace(url.href);
+    }
   } catch (_) {}
   </script>
   <script src="site.js" defer></script>
   <script data-goatcounter="https://qiming-zhu.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
 </head>
 <body>
-  <a class="skip-link" href="#main">跳到主要内容</a>
+  <a class="skip-link" href="#main">Skip to main content</a>
   <header class="site-header"><div class="header-inner">
-    <nav aria-label="主导航"><a href="#about">关于</a><a href="#research">研究</a><a href="#education">教育</a></nav>
-    <div class="language-switch" aria-label="语言选择">
-      <a href="?lang=zh" lang="zh-CN" data-language-link="zh" aria-current="page">中文</a>
+    <nav aria-label="Main navigation"><a href="#about">About</a><a href="#research">Research</a><a href="#education">Education</a></nav>
+    <div class="language-switch" aria-label="Language">
+      <a href="./" lang="en" data-language-link="en" aria-current="page">EN</a>
       <span aria-hidden="true">/</span>
-      <a href="en/?lang=en" lang="en" data-language-link="en" >EN</a>
+      <a href="zh/" lang="zh-CN" data-language-link="zh" >中文</a>
     </div>
   </div></header>
   <main id="main" class="page">
     <section id="about" class="about-section" aria-labelledby="name">
       <div class="bio">
         <p class="eyebrow">UNDERSTAND · ACT · EVOLVE</p>
-        <h1 id="name">朱淇铭<span class="other-name">Qiming Zhu</span></h1>
-        <p>我是<a href="https://www.cuhk.edu.cn/" target="_blank" rel="noopener noreferrer">香港中文大学（深圳）</a>人工智能学院的研究型硕士生，导师为<a href="https://wabyking.github.io/" target="_blank" rel="noopener noreferrer">王本友</a>教授。</p><p>我的研究方向是<strong>个性化智能体（Personalized Agents）</strong>。我希望构建真正融入个人工作与生活的智能伙伴：<strong>更懂你、更主动、更能干，并在长期协作中不断成长。</strong></p>
-        <div class="research-directions"><p><strong>更懂你（Personalization）。</strong>通过长期记忆，让智能体更好地保留和利用交互历史，理解个人偏好、习惯与需求。<a href="#tiermem">TierMem</a> 是这一方向的具体探索；我也希望进一步研究智能体如何从经验与反馈中持续改进。</p><p><strong>更主动、更能干（Proactive Agency）。</strong>研究智能体如何感知动态环境、把握行动时机，并利用操作系统与应用的能力，自主、可靠地完成真实世界中的复杂任务与协作。<a href="#os-native">OS-native Agents</a> 探索所需的系统支持，并以持续任务管理作为验证场景。</p><p>我也参与 <a href="#mtalk">MTalk-Bench</a> 等多轮交互评测研究，关注如何可靠地衡量模型的交互能力。</p></div>
-        <p class="vision">期待和大家一起探索、一起构建，逐步走向我们想象中的 <strong>JARVIS</strong>。</p>
+        <h1 id="name">Qiming Zhu<span class="other-name">朱淇铭</span></h1>
+        <p>I am a master’s student in the School of Artificial Intelligence at <a href="https://www.cuhk.edu.cn/en" target="_blank" rel="noopener noreferrer">The Chinese University of Hong Kong, Shenzhen</a>, advised by <a href="https://wabyking.github.io/" target="_blank" rel="noopener noreferrer">Prof. Benyou Wang</a>.</p><p>My research focuses on <strong>personalized AI agents</strong>. I aim to build capable companions for work and everyday life: agents that <strong>understand you, act proactively, and continually improve</strong> through long-term collaboration.</p>
+        <div class="research-directions"><p><strong>Personalization.</strong> I study long-term memory as a foundation for agents to use interaction history and understand individual preferences, habits, and needs. <a href="#tiermem">TierMem</a> is one step in this direction. I also hope to explore how agents can adapt through experience and feedback.</p><p><strong>Proactive agency.</strong> I study how agents can perceive changing environments, decide when to act, and use OS and application capabilities to act autonomously and reliably on complex real-world tasks. <a href="#os-native">OS-native Agents</a> explores the system support this requires, with ongoing task management as a testbed.</p><p>I also contribute to multi-turn interaction evaluation through <a href="#mtalk">MTalk-Bench</a>, studying how to reliably assess models’ interaction capabilities.</p></div>
+        <p class="vision">Let’s explore and build together, taking steps toward the <strong>JARVIS</strong> we envision.</p>
         <div class="contact-links">
           <a href="mailto:225085006@link.cuhk.edu.cn">Email <span aria-hidden="true">↗</span></a>
           <a class="" href="https://scholar.google.com/citations?user=vwQ1_0AAAAAJ" target="_blank" rel="noopener noreferrer">Google Scholar <span aria-hidden="true">↗</span></a>
           <a class="" href="https://github.com/Qiming-Zhu" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
         </div>
       </div>
-      <figure class="portrait"><img src="images/me.jpg" width="1212" height="808" alt="朱淇铭在海边看日落" fetchpriority="high"><figcaption>Qiming Zhu · 朱淇铭</figcaption></figure>
+      <figure class="portrait"><img src="images/me.jpg" width="1212" height="808" alt="Qiming Zhu watching the sunset by the sea" fetchpriority="high"><figcaption>Qiming Zhu · 朱淇铭</figcaption></figure>
     </section>
     <section id="research" class="research-section" aria-labelledby="research-title">
-      <div class="section-heading"><h2 id="research-title">研究工作</h2><span>Selected research</span></div>
+      <div class="section-heading"><h2 id="research-title">Selected research</h2></div>
       <div class="publications">
         <article class="publication" id="os-native">
-          <a class="research-figure" href="images/research/os-native-framework.png" data-lightbox data-figure-caption="OS-native Agent 框架：持久化任务会话、原生状态监听、跨应用能力与授权机制。" aria-label="查看完整研究配图: OS-native Agents">
-            <img src="images/research/os-native-framework.png" alt="OS-native Agent 框架：持久化任务会话、原生状态监听、跨应用能力与授权机制。" loading="lazy" decoding="async" width="1698" height="780">
+          <a class="research-figure" href="images/research/os-native-framework.png" data-lightbox data-figure-caption="OS-native Agent framework with persistent task sessions, native state monitors, cross-application capabilities, and authorization." aria-label="View full research figure: OS-native Agents">
+            <img src="images/research/os-native-framework.png" alt="OS-native Agent framework with persistent task sessions, native state monitors, cross-application capabilities, and authorization." loading="lazy" decoding="async" width="1698" height="780">
           </a>
           <div class="publication-copy">
-            <div class="paper-meta"><span>研究项目 · 2026</span></div>
+            <div class="paper-meta"><span>Research project · 2026</span></div>
             <h3><a class="" href="https://qiming-zhu.github.io/OSNativeAgent-trajectories/" target="_blank" rel="noopener noreferrer">OS-native Agents: Managing User Tasks in the Dynamic Mobile World</a></h3>
             <p class="authors"><strong>Qiming Zhu</strong>, Shunian Chen, Wentao Ge, Zhengyang Tang, Xiaoguang Li, Pinjia He, Benyou Wang</p>
-            <p class="summary"><strong>探索智能体在动态环境中自主、主动、可靠地行动所需的操作系统支持。</strong> 将状态感知、跨应用能力调用与授权机制纳入智能体架构，并构建 DynamicWorld，以环境和用户需求变化下的持续任务管理为评测场景。</p>
-            <div class="resource-links"><a class="resource-link" href="https://qiming-zhu.github.io/OSNativeAgent-trajectories/" target="_blank" rel="noopener noreferrer">项目主页</a><a class="resource-link" href="https://qiming-zhu.github.io/OSNativeAgent-trajectories/demo/" target="_blank" rel="noopener noreferrer">在线演示</a></div>
+            <p class="summary"><strong>Exploring OS support for autonomous, proactive, and reliable action in dynamic environments.</strong> The framework brings state awareness, cross-application capabilities, and authorization into the agent architecture. DynamicWorld uses ongoing task management to evaluate agents as environments and user needs change.</p>
+            <div class="resource-links"><a class="resource-link" href="https://qiming-zhu.github.io/OSNativeAgent-trajectories/" target="_blank" rel="noopener noreferrer">Project</a><a class="resource-link" href="https://qiming-zhu.github.io/OSNativeAgent-trajectories/demo/" target="_blank" rel="noopener noreferrer">Live demo</a></div>
           </div>
         </article>
         <article class="publication" id="tiermem">
-          <a class="research-figure" href="images/research/tiermem-overview.jpg" data-lightbox data-figure-caption="TierMem 架构：通过路由器与证据回写连接摘要记忆和原始日志。" aria-label="查看完整研究配图: TierMem">
-            <img src="images/research/tiermem-overview.jpg" alt="TierMem 架构：通过路由器与证据回写连接摘要记忆和原始日志。" loading="lazy" decoding="async" width="1440" height="449">
+          <a class="research-figure" href="images/research/tiermem-overview.jpg" data-lightbox data-figure-caption="TierMem architecture linking summary memory to raw evidence with a router and consolidation loop." aria-label="View full research figure: TierMem">
+            <img src="images/research/tiermem-overview.jpg" alt="TierMem architecture linking summary memory to raw evidence with a router and consolidation loop." loading="lazy" decoding="async" width="1440" height="449">
           </a>
           <div class="publication-copy">
             <div class="paper-meta"><span>COLM 2026</span></div>
             <h3><a class="" href="https://openreview.net/forum?id=svKCa4itcd" target="_blank" rel="noopener noreferrer">TierMem: Balancing Compressed Memory and Raw Evidence for Long-Horizon Agent Memory</a></h3>
             <p class="authors"><strong>Qiming Zhu</strong>, Shunian Chen, Rui Yu, Zhehao Wu, Benyou Wang</p>
-            <p class="summary"><strong>按需组织不同粒度的记忆，连接高层指导与具体做法。</strong> 压缩记忆提供高层概览与行动指导，原始记录保留详细信息与操作步骤；智能体根据当前任务动态选择记忆粒度，按需加载相关内容。</p>
-            <div class="resource-links"><a class="resource-link" href="https://openreview.net/forum?id=svKCa4itcd" target="_blank" rel="noopener noreferrer">论文</a><a class="resource-link" href="https://github.com/FreedomIntelligence/Tiermem" target="_blank" rel="noopener noreferrer">代码</a></div>
+            <p class="summary"><strong>Connecting high-level guidance with detailed instructions through adaptive memory granularity.</strong> Compressed memory provides an overview and high-level guidance, while raw records retain detailed information and step-by-step instructions. Agents select the memory granularity needed for the current task and load relevant content on demand.</p>
+            <div class="resource-links"><a class="resource-link" href="https://openreview.net/forum?id=svKCa4itcd" target="_blank" rel="noopener noreferrer">Paper</a><a class="resource-link" href="https://github.com/FreedomIntelligence/Tiermem" target="_blank" rel="noopener noreferrer">Code</a></div>
           </div>
         </article>
         <article class="publication" id="mtalk">
-          <a class="research-figure" href="images/research/mtalk-overview.png" data-lightbox data-figure-caption="MTalk-Bench 总览：从多维语音对话构造到 Arena 成对比较与 Rubrics 细粒度评测。" aria-label="查看完整研究配图: MTalk-Bench">
-            <img src="images/research/mtalk-overview.png" alt="MTalk-Bench 总览：从多维语音对话构造到 Arena 成对比较与 Rubrics 细粒度评测。" loading="lazy" decoding="async" width="1600" height="448">
+          <a class="research-figure" href="images/research/mtalk-overview.png" data-lightbox data-figure-caption="MTalk-Bench overview connecting speech-aware data construction with Arena-style and rubric-based evaluation." aria-label="View full research figure: MTalk-Bench">
+            <img src="images/research/mtalk-overview.png" alt="MTalk-Bench overview connecting speech-aware data construction with Arena-style and rubric-based evaluation." loading="lazy" decoding="async" width="1600" height="448">
           </a>
           <div class="publication-copy">
-            <div class="paper-meta"><span>预印本 · 2025</span></div>
+            <div class="paper-meta"><span>Preprint · 2025</span></div>
             <h3><a class="" href="https://arxiv.org/abs/2508.18240" target="_blank" rel="noopener noreferrer">MTalk-Bench: Evaluating Speech-to-Speech Models in Multi-Turn Dialogues via Arena-style and Rubrics Protocols</a></h3>
             <p class="authors">Yuhao Du, Qianwei Huang, Guo Zhu, Zhanchen Dai, Shunian Chen, <strong>Qiming Zhu</strong>, Le Pan, Minghao Chen, Yuhao Zhang, Li Zhou, Benyou Wang, Haizhou Li</p>
-            <p class="summary"><strong>评估语音模型在多轮对话中理解内容、语音线索与环境声音的能力。</strong> 结合成对比较与细粒度评分，分析模型表现及不同评测方法的可靠性。</p>
-            <div class="resource-links"><a class="resource-link" href="https://freedomintelligence.github.io/MTalk-Bench/" target="_blank" rel="noopener noreferrer">项目主页</a><a class="resource-link" href="https://arxiv.org/abs/2508.18240" target="_blank" rel="noopener noreferrer">论文</a><a class="resource-link" href="https://github.com/FreedomIntelligence/MTalk-Bench" target="_blank" rel="noopener noreferrer">代码</a><a class="resource-link" href="https://huggingface.co/datasets/FreedomIntelligence/MTalk-Bench" target="_blank" rel="noopener noreferrer">数据集</a></div>
+            <p class="summary"><strong>Evaluating content, vocal cues, and ambient sound in multi-turn spoken interaction.</strong> Pairwise comparisons and detailed rubrics help analyze model performance and the reliability of different evaluation methods.</p>
+            <div class="resource-links"><a class="resource-link" href="https://freedomintelligence.github.io/MTalk-Bench/" target="_blank" rel="noopener noreferrer">Project</a><a class="resource-link" href="https://arxiv.org/abs/2508.18240" target="_blank" rel="noopener noreferrer">Paper</a><a class="resource-link" href="https://github.com/FreedomIntelligence/MTalk-Bench" target="_blank" rel="noopener noreferrer">Code</a><a class="resource-link" href="https://huggingface.co/datasets/FreedomIntelligence/MTalk-Bench" target="_blank" rel="noopener noreferrer">Dataset</a></div>
           </div>
         </article></div>
     </section>
     <section id="education" class="education-section" aria-labelledby="education-title">
-      <div class="section-heading"><h2 id="education-title">教育背景</h2><span>Education</span></div>
-      <ol class="education-list"><li><time>2025.09 — 至今</time><div><h3>香港中文大学（深圳）</h3><p>人工智能研究型硕士 · 人工智能学院</p><p class="advisor">导师：王本友教授</p></div></li><li><time>2020.09 — 2024.07</time><div><h3>西安交通大学</h3><p>数学与应用数学 · 理学学士</p></div></li></ol>
+      <div class="section-heading"><h2 id="education-title">Education</h2></div>
+      <ol class="education-list"><li><time>Sep 2025 — Present</time><div><h3>The Chinese University of Hong Kong, Shenzhen</h3><p>Research master’s in Artificial Intelligence · School of AI</p><p class="advisor">Advisor: Prof. Benyou Wang</p></div></li><li><time>Sep 2020 — Jul 2024</time><div><h3>Xi’an Jiaotong University</h3><p>B.Sc. in Mathematics and Applied Mathematics</p></div></li></ol>
     </section>
     <footer class="site-footer">
-      <p class="footer-contact">欢迎交流个性化智能体、长期记忆与人机协作相关的研究和实践。 <a href="mailto:225085006@link.cuhk.edu.cn">Email ↗</a></p>
-      <div><span>© 2026 Qiming Zhu</span><span>更新于 2026 年 10 月</span></div>
-      <p class="template-credit">基于 <a class="" href="https://github.com/w-r-s/academic-homepage-template" target="_blank" rel="noopener noreferrer">学术主页模板</a></p>
+      <p class="footer-contact">I welcome conversations and collaborations on personalized agents, agent memory, and human–AI interaction. <a href="mailto:225085006@link.cuhk.edu.cn">Email ↗</a></p>
+      <div><span>© 2026 Qiming Zhu</span><span>Updated October 2026</span></div>
+      <p class="template-credit">Adapted from <a class="" href="https://github.com/w-r-s/academic-homepage-template" target="_blank" rel="noopener noreferrer">academic homepage template</a></p>
     </footer>
   </main>
-  <dialog id="image-viewer" aria-label="查看完整研究配图"><button class="viewer-close" type="button" aria-label="关闭图片">×</button><img alt=""><p></p></dialog>
+  <dialog id="image-viewer" aria-label="View full research figure"><button class="viewer-close" type="button" aria-label="Close image">×</button><img alt=""><p></p></dialog>
 </body></html>

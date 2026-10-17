@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Generate the two static language pages from content.json. Python stdlib only."""
+"""Generate static language pages from content.json. Python stdlib only."""
 from pathlib import Path
 from html import escape as e
 import json
@@ -59,10 +59,12 @@ TEXT = {
 def external(url, label, cls=''):
     return f'<a class="{cls}" href="{e(url, quote=True)}" target="_blank" rel="noopener noreferrer">{label}</a>'
 
-for lang, t in TEXT.items():
-    prefix = '' if lang == 'zh' else '../'
-    page_url = URL + ('' if lang == 'zh' else 'en/')
-    opposite = 'en/' if lang == 'zh' else '../'
+for output_path, lang in {'index.html': 'en', 'zh/index.html': 'zh', 'en/index.html': 'en'}.items():
+    t = TEXT[lang]
+    prefix = '' if output_path == 'index.html' else '../'
+    page_url = URL + ('zh/' if lang == 'zh' else '')
+    english_link = prefix or './'
+    chinese_link = prefix + 'zh/'
     cards = []
     for p in DATA['publications']:
         author_names = [f'<strong>{e(a)}</strong>' if a == 'Qiming Zhu' else e(a) for a in p['authors']]
@@ -109,8 +111,8 @@ for lang, t in TEXT.items():
   <meta name="description" content="{e(t['description'])}">
   <meta name="author" content="Qiming Zhu">
   <link rel="canonical" href="{e(page_url)}">
-  <link rel="alternate" hreflang="zh-CN" href="{e(URL)}">
-  <link rel="alternate" hreflang="en" href="{e(URL+'en/')}">
+  <link rel="alternate" hreflang="zh-CN" href="{e(URL+'zh/')}">
+  <link rel="alternate" hreflang="en" href="{e(URL)}">
   <link rel="alternate" hreflang="x-default" href="{e(URL)}">
   <meta property="og:type" content="profile">
   <meta property="og:title" content="{t['title']}">
@@ -123,11 +125,14 @@ for lang, t in TEXT.items():
   <script type="application/ld+json">{jsonld}</script>
   <script>
   try {{
-    const explicit = new URL(location.href).searchParams.get('lang');
-    const saved = localStorage.getItem('qiming-language');
-    if (explicit === 'zh' || explicit === 'en') localStorage.setItem('qiming-language', explicit);
-    else if ('{lang}' === 'en') localStorage.setItem('qiming-language', 'en');
-    else if (saved === 'en') location.replace('en/?lang=en' + location.hash);
+    const url = new URL(location.href);
+    const explicit = url.searchParams.get('lang');
+    if ((explicit === 'zh' || explicit === 'en') && explicit !== '{lang}') {{
+      url.pathname = new URL(explicit === 'zh' ? '{chinese_link}' : '{english_link}', location.href).pathname;
+      url.searchParams.delete('lang');
+      window.goatcounter = {{ no_onload: true }};
+      location.replace(url.href);
+    }}
   }} catch (_) {{}}
   </script>
   <script src="{prefix}site.js" defer></script>{ANALYTICS_SCRIPT}
@@ -137,9 +142,9 @@ for lang, t in TEXT.items():
   <header class="site-header"><div class="header-inner">
     <nav aria-label="{'主导航' if lang == 'zh' else 'Main navigation'}">{nav}</nav>
     <div class="language-switch" aria-label="{'语言选择' if lang == 'zh' else 'Language'}">
-      <a href="{'' if lang == 'zh' else '../'}?lang=zh" lang="zh-CN" data-language-link="zh" {'aria-current="page"' if lang == 'zh' else ''}>中文</a>
+      <a href="{english_link}" lang="en" data-language-link="en" {'aria-current="page"' if lang == 'en' else ''}>EN</a>
       <span aria-hidden="true">/</span>
-      <a href="{'en/' if lang == 'zh' else ''}?lang=en" lang="en" data-language-link="en" {'aria-current="page"' if lang == 'en' else ''}>EN</a>
+      <a href="{chinese_link}" lang="zh-CN" data-language-link="zh" {'aria-current="page"' if lang == 'zh' else ''}>中文</a>
     </div>
   </div></header>
   <main id="main" class="page">
@@ -175,7 +180,7 @@ for lang, t in TEXT.items():
   <dialog id="image-viewer" aria-label="{t['figure']}"><button class="viewer-close" type="button" aria-label="{t['close']}">×</button><img alt=""><p></p></dialog>
 </body></html>
 '''
-    output = ROOT / ('index.html' if lang == 'zh' else 'en/index.html')
+    output = ROOT / output_path
     output.parent.mkdir(parents=True, exist_ok=True)
     output.write_text(html)
-print('Built index.html and en/index.html')
+print('Built English homepage, Chinese page, and legacy English page')

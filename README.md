@@ -1,9 +1,9 @@
 # Qiming Zhu · 朱淇铭
 
-中文默认的双语学术主页，基于 [w-r-s/academic-homepage-template](https://github.com/w-r-s/academic-homepage-template) 的布局重新整理。
+英文默认的双语学术主页，基于 [w-r-s/academic-homepage-template](https://github.com/w-r-s/academic-homepage-template) 的布局重新整理。
 
-- [中文网站](https://qiming-zhu.github.io/)
-- [English](https://qiming-zhu.github.io/en/)
+- [English](https://qiming-zhu.github.io/)
+- [中文网站](https://qiming-zhu.github.io/zh/)
 - [GitHub 个人资料页 README](profile/README.md)
 
 ## 本地预览
@@ -22,11 +22,11 @@ python3 -m http.server 8765 --bind 127.0.0.1
 - `images/me.jpg`：用户提供的照片；页面仅通过 CSS 控制展示范围，原图保留。
 - `images/research/`：卡片与放大视图均使用原始研究配图，不重新绘制或替换。
 - `stylesheet.css`：样式和手机布局。
-- `site.js`：语言选择、配图放大。
+- `site.js`：配图放大。
 
-修改数据或模板后运行 `python3 build.py`，提交两个生成的页面。Pages 使用 `main` 分支的根目录；`.nojekyll` 保证按静态文件部署。
+修改数据或模板后运行 `python3 build.py`，提交三个生成的页面。Pages 使用 `main` 分支的根目录；`.nojekyll` 保证按静态文件部署。
 
-现已采用两个仓库的布局：`Qiming-Zhu/Qiming-Zhu` 用于 GitHub 个人资料页，`Qiming-Zhu/qiming-zhu.github.io` 用于独立网站。网站根地址为 `https://qiming-zhu.github.io/`，英文版位于 `/en/`。
+现已采用两个仓库的布局：`Qiming-Zhu/Qiming-Zhu` 用于 GitHub 个人资料页，`Qiming-Zhu/qiming-zhu.github.io` 用于独立网站。网站根地址 `https://qiming-zhu.github.io/` 直接显示英文，中文版位于 `/zh/`；旧 `/en/` 地址继续显示英文并以根地址为 canonical。语言由 URL 决定，旧浏览器语言偏好不会覆盖英文首页；旧 `?lang=zh` 链接会跳转至中文版，移除 `lang` 参数并保留其他查询参数和页面锚点。跳转前不发送访问统计，避免重复计数。
 
 ## GitHub 个人资料页
 
